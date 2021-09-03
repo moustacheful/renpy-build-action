@@ -17,7 +17,7 @@ outputs:
     description: "The built version of the project"
 runs:
   using: 'docker'
-  image: 'moustacheful/renpy:7.4.8'
+  image: 'docker://moustacheful/renpy:7.4.8'
   args:
     - ${{ inputs.sdk-version }}
     - ${{ inputs.project-dir }}
